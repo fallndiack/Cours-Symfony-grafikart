@@ -114,6 +114,9 @@
       <path value="$PROJECT_DIR$/AgenceImmobiliere/vendor/cocur/slugify" />
       <path value="$PROJECT_DIR$/AgenceImmobiliere/vendor/doctrine/data-fixtures" />
       <path value="$PROJECT_DIR$/AgenceImmobiliere/vendor/doctrine/doctrine-fixtures-bundle" />
+      <path value="$PROJECT_DIR$/AgenceImmobiliere/vendor/fzaninotto/faker" />
+      <path value="$PROJECT_DIR$/AgenceImmobiliere/vendor/knplabs/knp-components" />
+      <path value="$PROJECT_DIR$/AgenceImmobiliere/vendor/knplabs/knp-paginator-bundle" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.2" />

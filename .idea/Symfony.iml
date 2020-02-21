@@ -27,7 +27,10 @@
       <excludeFolder url="file://$MODULE_DIR$/AgenceImmobiliere/vendor/doctrine/reflection" />
       <excludeFolder url="file://$MODULE_DIR$/AgenceImmobiliere/vendor/easycorp/easy-log-handler" />
       <excludeFolder url="file://$MODULE_DIR$/AgenceImmobiliere/vendor/egulias/email-validator" />
+      <excludeFolder url="file://$MODULE_DIR$/AgenceImmobiliere/vendor/fzaninotto/faker" />
       <excludeFolder url="file://$MODULE_DIR$/AgenceImmobiliere/vendor/jdorn/sql-formatter" />
+      <excludeFolder url="file://$MODULE_DIR$/AgenceImmobiliere/vendor/knplabs/knp-components" />
+      <excludeFolder url="file://$MODULE_DIR$/AgenceImmobiliere/vendor/knplabs/knp-paginator-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/AgenceImmobiliere/vendor/laminas/laminas-code" />
       <excludeFolder url="file://$MODULE_DIR$/AgenceImmobiliere/vendor/laminas/laminas-eventmanager" />
       <excludeFolder url="file://$MODULE_DIR$/AgenceImmobiliere/vendor/laminas/laminas-zendframework-bridge" />
