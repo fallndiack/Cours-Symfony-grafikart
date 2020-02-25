@@ -19,8 +19,8 @@
             {% endif %}
             <div class="row">
                 <div class="col-md-8">
-                    {% if property.filename %}
-                        <img src="{{ vich_uploader_asset(property, 'imageFile') }}" alt=""
+                    {% if property.picture %}
+                        <img src="{{ vich_uploader_asset(property.picture, 'imageFile') }}" alt=""
                              style="width: 100%; max-height: 530px;">
                     {% else %}
                         <img src="/images/properties/empty.jpg" alt="" style="width: 100%; max-height: 530px;">
