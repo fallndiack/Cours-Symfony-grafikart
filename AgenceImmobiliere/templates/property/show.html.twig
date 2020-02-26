@@ -13,18 +13,23 @@
                 </div>
             {% endfor %}
             {% if not form.vars.valid %}
-            <div class="alert alert-danger">
-                Veuillez remplir correctement le formulaire
-            </div>
+                <div class="alert alert-danger">
+                    Veuillez remplir correctement le formulaire
+                </div>
             {% endif %}
             <div class="row">
                 <div class="col-md-8">
-                    {% if property.picture %}
-                        <img src="{{ vich_uploader_asset(property.picture, 'imageFile') }}" alt=""
-                             style="width: 100%; max-height: 530px;">
-                    {% else %}
+                <div data-slider>
+                    {% if property.pictures is empty %}
                         <img src="/images/properties/empty.jpg" alt="" style="width: 100%; max-height: 530px;">
+
+                    {% else %}
+                        {% for picture in property.pictures %}
+                            <img src="{{ vich_uploader_asset(picture, 'imageFile') }}" alt=""
+                                 style="width: 100%; max-height: 530px;">
+                        {% endfor %}
                     {% endif %}
+                </div>
 
                 </div>
                 <div class="col-md-4">
@@ -32,8 +37,11 @@
                     <h2>{{ property.rooms }} pièces - {{ property.surface }} m²</h2>
                     <div class="text-primary" style="font-size: 4rem;font-weight: bold;">{{ property.formattedPrice }}€
                     </div>
-                    <a href="#" class="btn btn-primary" id="contactButton" {% if form.vars.submitted %} style="display: none;" {% endif %}>Contacter l'agence</a>
-                    <div id="contactForm" class="mt-4"{% if not form.vars.submitted %} style="display: none;"{% endif %}>
+                    <a href="#" class="btn btn-primary"
+                       id="contactButton" {% if form.vars.submitted %} style="display: none;" {% endif %}>Contacter
+                        l'agence</a>
+                    <div id="contactForm"
+                         class="mt-4"{% if not form.vars.submitted %} style="display: none;"{% endif %}>
                         {{ form_start(form) }}
                         <div class="row">
                             <div class="col">{{ form_row(form.firstname) }}</div>
@@ -96,7 +104,9 @@
                 </ul>
             </div>
         </div>
+        <div id="map" style="width: 100%; height: 400px" data-lat="{{ property.lat }}" data-lng="{{ property.lng }}">
 
+        </div>
 
     </div>
 
